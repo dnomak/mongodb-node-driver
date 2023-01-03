@@ -1,11 +1,13 @@
 {
   "arrowParens": "avoid",
   "bracketSpacing": true,
-  "printWidth": 140,
+  "htmlWhitespaceSensitivity": "strict",
+  "jsxBracketSameLine": false,
+  "printWidth": 80,
+  "quoteProps": "as-needed",
   "semi": false,
-  "singleAttributePerLine": false,
   "singleQuote": true,
   "tabWidth": 2,
-  "trailingComma": "none",
+  "trailingComma": "es5",
   "useTabs": false
 }
