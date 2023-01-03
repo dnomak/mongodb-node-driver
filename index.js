@@ -13,7 +13,9 @@ const accountsCollection = client.db(dbname).collection(collection_name)
 const connectToDatabase = async () => {
   try {
     await client.connect()
-    console.log(`Connected to the ${dbname} database 🌎 \nFull connection string: \n${uri}`)
+    console.log(
+      `Connected to the ${dbname} database 🌎 \nFull connection string: \n${uri}`
+    )
   } catch (error) {
     console.log(`Error connecting to the database: ${error}`)
   }
@@ -24,7 +26,7 @@ const sampleAccount = {
   account_holder: 'Linus Torvalds',
   account_type: 'checking',
   balance: 50352434,
-  last_updated: new Date()
+  last_updated: new Date(),
 }
 
 const sampleAccounts = [
@@ -33,15 +35,15 @@ const sampleAccounts = [
     account_holder: 'Ada Lovelace',
     account_type: 'checking',
     balance: 60218,
-    last_updated: new Date()
+    last_updated: new Date(),
   },
   {
     account_id: 'MDB829000001',
     account_holder: 'Muhammad ibn Musa ak-Khwarizmi',
     account_type: 'saving',
     balance: 267914296,
-    last_updated: new Date()
-  }
+    last_updated: new Date(),
+  },
 ]
 
 const documentsToFind = { balance: { $gt: 4700 } }
